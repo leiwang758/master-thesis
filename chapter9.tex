@@ -1,0 +1,65 @@
+\chapter{\textbf{Conclusion}}
+
+Mobile Edge Computing (MEC) empowers cloud computing by distributing cloud resources (\eg storage and processing capacity) to the edge servers inside the range of radio access network (RAN) and bring them closer to end-users. It provides end-users with swift and powerful computing, energy efficiency, storage capacity, mobility, location, and context awareness support. Network Function Virtualization (NFV) enables scalable resource allocation, agile deployment, and efficient management of network services. It largely reduces the deploying and managing cost. 
+Applying NFV to MEC will not only reduce the overall latency for end-users but also provide them with lower cost and flexible management over network services. One of the main considerations when applying NFV to MEC is the placement of Service Function Chains (SFC) on edge, where more changes such as service migration and user mobility need to be addressed. 
+
+%Many existing works in the literature have discussed SFC placement, these works, however, either mainly focus on $system-managed$ SFC placement that system-wide information is known or lack consideration of MEC contexts such as users mobility and service migration. 
+
+In this work, we addressed the problem of user-managed service function chain orchestration with the objective of end-to-end delay optimization in mobile edge computing while considering
+the service migration cost and user mobility. We formulated
+the problem as an integer linear program and used its solution as an offline performance benchmark.
+In order to handle the uncertainties in the real environment, we applied the theory of contextual bandits, which reduces the problem complexity and utilizes the available information to make efficient decisions.
+Then, we used an efficient dynamic programming method to perform the chain orchestration task, which computes delay-optimized SFC placements in polynomial time.
+At last, through extensive simulations and emulations, we analyzed the utility and performance of our algorithm.
+
+Section \ref{section: thesis summary} of this chapter summarize the thesis with regards to our research focus and Section \ref{section:future work} discuss the future research directions.
+
+
+
+\section{Thesis Summary}
+\label{section: thesis summary}
+In Chapter 1, we discussed the concept of NFV and MEC, as well as the advantages and challenges when applying NFV to MEC. There are three challenges in user-managed SFC placement on edge: Unknown system-wide information such as dynamic network capacities, user's mobility within MEC, and VNF migrations due to the user's mobility.  We also briefly introduced the approaches taken to address the aforementioned challenges and the main contributions of this work.
+
+Chapter 2 provided readers with the background information for acknowledging the work in this thesis. Particularly, we provided a summary of basic knowledge on NFV, SFC, and MEC architecture, then, we introduced the online learning techniques concerned in this work, including Greedy Multi-Arm Bandit learning and Combinatorial Contextual Multi-arm Bandit learning, and the mathematical techniques applied in this work including Binary Integer Linear Program, Binary Product Linearization and Dynamic Programming. We also summarized the software tools used in simulation and emulation, including Networkx simulator, Gurobi Optimizer, and Mininet-WiFi emulator.
+
+In Chapter 3, we review and categorize the previous works that solve the SFC placement into four classes based on their problem model: system-managed edge-agnostic, system-managed edge-enabled, user-managed edge-agnostic, and user-managed edge-enabled. For each work reviewed, we discuss their system model, objective, and the applied optimization approaches and algorithms, as well as their weakness and relevance to our work.
+
+Chapter 4 describes the mathematical models we adopt in this work in order to modelize the SFC placement in the mobile edge computing system,  including network model and demand model, then we formally defined the user-managed edge-enabled SFC placement as a contrained optimization problem with the objective of minimizing the total end-to-end delay, which is formulated as a Binary Integer Linear Program problem. 
+
+In chapter 5, we present our proposed contextual combinatorial bandit formulation for the user-managed edge-enabled SFC placement problem. Specifically, we first utilize an unknown parameter vector for each server and link to capture and learn the system-wide information, including processing and bandwidth capacities. We then associate each server and link with a feature vector that characterizes user's side contextual information such as their service demand, current location, and previous SFC placement.  Then, we define a linear reward function that utilizes the two aforementioned vectors to calculate the delays on each arm (\ie\ each server and link). We further prove that with the proposed combinatorial bandit formulation, the decision space of the user can be considerably reduced compared to a general multi-arm bandit formulation.
+Finally, we present our proposed bandit-based algorithm \myalgorithm, that adopts the \textit{upper confidence bound} theory to maintain confidence bound for each arm during the learning slots and uses dynamic programming algorithm to compute the optimal placement solution in polynomial time at every single time slot.
+
+Chapter 6 provides a brief idea and design of the delay estimation framework that is required in the bandit formulation. The main idea of this framework is to use timestamps to record and keep track of the delays experienced on each node and link when network packets are routed through SFCs.
+
+Chapter 7 presents extensive simulation results that demonstrate the performance of our proposed algorithm. The results show that \myalgorithm\ can cope with the system uncertainty and make balanced decisions in terms of migration, exploration, and exploitation under different system dynamics. 
+We then study the learning behavior and convergence performance by analyzing the time average cost and total regrets during the learning slots and compare it with an optimal offline benchmark.
+We further studied the performance of our proposed algorithm against greedy approaches under different problem sizes. The comparison results show that our proposed algorithm outperforms the greedy approaches by at least 50 percent in terms of scalability.
+
+Chapter 8 reported the results of realistic Mininet-wifi experiments we conduct in order to validate the superior performances of our proposed algorithm under the emulated wireless network environment.
+The collected empirical data indicate that our proposed algorithm has a similar learning behavior as simulation.
+We further study the performance of \myalgorithm\ under different network delay settings,  mobility models, and SFC lengths. The result of this experiment shows that the performance observed in simulation is indeed achievable in practice.
+
+
+
+
+% In this thesis, we study the SFC placement problem in a NFV-enabled MEC. We focus on a user-managed SFC placement problem and seek to optimize the end-to-end delay while taken migration, user's mobility and user specific demands taken into consideration. For which we proposed an exact offline problem formulation and an online learning approaches that is based on multi-arm bandit theory. 
+% In order to characterize the attribute on each computing node and link, we formulate the placement problem as a contextual combinatorial MAB problem and balancingly explore and exploit the value on each feature by updating its upper confidence bound at each round. Furthermore, we designed a dynamic program based SFC allocation approach that is able to find per-time-slot optimum in a polynomial time and integrate it the learning frame. Lastly, through extensive simulations and emulations, we are able to demonstrate the superior performance of our algorithm.
+
+
+\section{Future work}
+\label{section:future work}
+
+\cat{SFC placement Strategies}
+We resort to using a dynamic programming approach to compute the placement solution at every single time slot. While we can attain the exact optimum using this approach, developing approximate placement algorithms that achieve near-optimum performance can result in less run time cost when the problem size is very large.
+
+
+
+\cat{Network Topologies}
+The edge computing network topology we used in our simulation and emulation experiments were designed to be squared grid structures. An interesting research direction would be to consider other types of network topologies (\eg, cluster topology) in the experiments. 
+
+
+\cat{Cooperation in Practice}
+In this work, we analyze the performance of \myalgorithm\ on both model-driven simulation and realistic Mini-WiFi emulations. A valuable next step is to implement and deploy such algorithm in a real-world MEC network for more empirical analysis.
+
+
+

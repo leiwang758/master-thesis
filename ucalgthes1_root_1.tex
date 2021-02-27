@@ -1,0 +1,226 @@
+%% Modified documentstyle to documentclass -- compatibility with LaTex2e
+%% N. Mancell (98/03/01).
+
+%%  ucalgthes_root.tex        (NM 98/03/01)
+%   Modified   92-09-18      Add references to dissertation        D. Teale
+%                            Add approval page to toc
+%                            Add ref to Title Degree on approval page
+%   Modified  2006-09-12     Added geometry package to set up UofC thesis margins
+%                            Removed includeprompt option N. Mancell
+%
+% Modified  2012-04-15  T.Zhang
+% 1, the ÔfancyÕ package is cancelled. The pagestyle is changed from ÔmyheadingsÕ and ÔheadingsÕ to ÔplainÕ to move the page number (footer) from top right to bottom centre.
+% 2, The parameter  of using ÔgeometryÕ package is changed from four different values (top=1in, bottom=1.22in, left=1.40in, right=0.850in) to one single value: 1in (top=1in, bottom= 1in, left= 1in, right= 1in)
+% 3, ÔList of FiguresÕ is modified to ÔList of Figures and IllustrationsÕ
+% 4, A new page ÔList of Symbols, Abbreviations and NomenclatureÕ is created. Its page number is following ÔList of Figures and IllustrationsÕ with Roman numerals. A separate file Ôsymbols.texÕ is created for students to put content into the list.
+
+
+
+
+
+\documentclass[12pt]{ucalgthes1}
+\usepackage[letterpaper,top=1in, bottom= 1in, left= 1in, right= 1in]{geometry}
+%\usepackage{fancyhdr}
+%\fancyhead{}
+%\fancyfoot{}
+%\renewcommand{\headrulewidth}{0pt}
+%\fancyhead[RO,LE]{\thepage}
+%Define other usepackages here
+\usepackage{hyperref}
+%\usepackage{mathptmx}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{cite}
+\usepackage[utf8]{inputenc}
+\usepackage{pifont}
+\usepackage{amsmath,amssymb}
+\usepackage{tabu} 
+\usepackage{longtable}
+\usepackage{subcaption}
+\usepackage[sort, numbers]{natbib}
+\usepackage{float}
+\usepackage{url}
+\usepackage{dirtytalk}
+% \usepackage{algorithm}
+% \usepackage{algpseudocode}
+\usepackage[linesnumbered,ruled]{algorithm2e}
+\usepackage{amsthm}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\renewcommand{\baselinestretch}{2.0} 
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{observation}{Observation}
+\newtheorem{definition}{Definition}
+\newtheorem{claim}{Claim}
+\newtheorem{corollary}{Corollary}
+
+\makeatletter
+\newcounter{problemenv}
+\newenvironment{problemenv}[1][htb]
+{\renewcommand{\algorithmcfname}{Formulation}% Update algorithm name
+	\let\c@algocf\c@problemenv% Update algorithm counter
+	\LinesNotNumbered%
+	\begin{algorithm}[#1]%
+	}{\end{algorithm}}
+\makeatother
+
+
+
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+% \usepackage{epsfig}
+\usepackage{array, makecell}
+\graphicspath{{figs/}}
+% \usepackage{tikz}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\etal}{\textit{et al.}}
+\newcommand{\ie}{\textit{i.e.}}
+\newcommand{\eg}{\textit{e.g.}}
+\newcommand{\aka}{\textit{a.k.a.}}
+\newcommand{\thesistitle}{Title of Thesis}
+\newcommand{\cat}[1]{\noindent\textbf{#1.}}
+\newcommand{\dog}[1]{\noindent\textbf{#1\ }}
+\newcommand{\ccmab}{$\text{C}^2\text{MAB}$}
+\newcommand{\ccucb}{$\text{C}^2\text{UCB}$}
+%\newcommand{\myproblem}{\textit{UECPP}\ }
+\newcommand{\cucb}{$\text{C}^2\text{U}\text{C}\text{B}$\ }
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\nb}[1]{\textnoraml{\bf #1}}
+\newcommand{\myproblem}{\textsmaller{\textsf{UECOP}}}
+\newcommand{\myalgorithm}{\textsmaller{\textsf{CHANGE}}}
+\DeclareMathOperator{\E}{\mathbb{E}}
+\setlist[itemize]{leftmargin=10mm}
+\title{Bandit-based Delay-Aware Service Function Chain
+	Orchestration at the Edge \\ \bigskip
+ }
+%
+%            Insert the correct information between the {}
+%
+\author{Lei Wang}
+\thesisyear{2020}
+\thesis{thesis}    % the word dissertation can be inserted between {}
+
+\monthname{SEPTEMBER}
+\dept{GRADUATE PROGRAM IN COMPUTER SCIENCE}
+\degree{DEGREE OF MASTER OF SCIENCE}
+%
+%                    End of supplied information
+%
+\begin{document}
+\makethesistitle
+\pagenumbering{roman}     % resets page counter to one
+\setcounter{page}{2}
+%\chapter*{UNIVERSITY OF CALGARY \\ FACULTY OF GRADUATE STUDIES}
+%\thispagestyle{empty}
+%The undersigned certify that they have read, and recommend
+%to the Faculty of Graduate Studies for acceptance, a \Thesis\ entitled
+%``\thesistitle'' submitted by \Author\
+%in partial fulfillment of the requirements for the degree of
+%\Degree.\\
+
+%
+%                 Substitute  List of Examiners
+%
+%\begin{signing}{Department of Academic Computing}
+%\signline
+%Chairman, Dr.~John D.~Doe \\
+%Department of Academic Computing \\
+%Services  \\
+%\signline
+%Chairman, Dr.~John D.~Doe \\
+%Department of Academic Computing \\
+%Services  \\
+%\signline
+%Chairman, Dr.~John D.~Doe \\
+%Department of Academic Computing \\
+%Services  \\
+%\signline
+%Chairman, Dr.~John D.~Doe \\
+%Department of Academic Computing \\
+%Services  \\
+%\newsigncolumn         use this command to start a new column if necessary
+%\newsigncolumn
+%\signline
+%Chairman, Dr.~John D.~Doe \\
+%Department of Academic Computing \\
+%Services  \\
+%\signline
+%Dr.~Jane Smith \\
+%Department of Academic Computing  \\
+
+%\signline
+%Dr.~A.~B.~Brown \\
+%Department of Academic Computing  \\
+%\end{signing}
+%
+\newpage
+\phantomsection
+\altchapter{\bf{Abstract}}
+In Mobile Edge Computing (MEC), the network’s edge is equipped with computing and storage resources in order to reduce latency by minimizing communication with remote
+clouds, thereby provide mobile users with both intensive computing resources and proximity to the data sources. However, the available computing capacity at the edge is limited compared to that of a remote cloud. A promising solution for efficient utilization of edge capacity is the fine-grained management via Network Function Virtualization (NFV). In this approach, users express their service demands as a Service Function Chain (SFC), which are composed
+of virtual network functions. Such service composition allows
+constituent VNFs to be flexibly deployed at the edge or in the
+cloud such that the service latency is minimized.
+
+In order to provide the user with a tolerated perceived delay for an SFC-based application, many works have taken aim at optimal placement for SFC in heterogeneous scenarios. Most of the existing work on system-wide placement with the assumption that they have the knowledge of information such as future demands and the whereabouts of the users. The increasing number of users, however, challenges the scalability of system-managed SFC orchestration. 
+%To address this problem, we propose a user-managed online SFC orchestration framework at the edge of the network, called \myalgorithm\, that minimizes service latency by jointly considering the effect of user mobility, edge capacity and service migration
+To address this problem, we formulate the user-managed SFC placement in MEC as a contextual combinatorial multi-arm bandit (\ccmab) problem and proposed \myalgorithm, a bandit based algorithm for online SFC orchestration on edge, which considers user’s mobility and service preference while jointly optimizing their perceived latency and service migration delay, and then propose an exact offline approach for the role of performance benchmark using standard optimization solver.
+To fit the SFC placement problem in a bandit framework, we model the nodes and links to be arms by viewing them as delays and define them as a set of feature vectors. To balance the exploration and exploitation of arms, we adopt the Upper Confidence Bound (UCB) theory in arm selection to efficiently explore and estimate the arms and use Dynamic Programming  (DP) algorithm to exploit the collected arm estimations and compute delay-optimized SFC placements. 
+Then we design and implement a delay estimation framework as an essential component of \myalgorithm.
+
+At last, we evaluate the proposed algorithm in extensive model-driven simulation and realistic Mininet-WiFi emulation experiments. In the simulation, we study the behavior of the proposed algorithm under varying simulating parameters and problem scales and compare our algorithm with two other online approaches. Numeric simulation results show that the proposed algorithm can achieve close-to-optimum performance and can improve latency performance by nearly 20 percent compared to other approaches.
+In emulation, we further validate the superior performance of CMAB in realistic Mininet-wifi experiments under different environmental parameters.
+
+
+%\newpage
+%\phantomsection
+%\altchapter{\bf{Acknowledgements}}
+%Paragraph 1
+%
+%Paragraph 2
+%
+%Paragraph 3
+
+\begin{singlespace}
+\newpage
+\phantomsection
+\tableofcontents
+\pagestyle{plain}
+\newpage
+\phantomsection
+\listoftables
+\pagestyle{plain}
+\newpage
+\phantomsection
+\listoffigures
+\pagestyle{plain}
+\clearpage
+\clearpage          % otherwise tables will be numbered wrong
+\end{singlespace}
+\newpage
+\phantomsection
+\chapter*{\bf{List of Symbols, Abbreviations and Nomenclature}\hfill} \addcontentsline{toc}{chapter}{List of Symbols}
+\listofsymbols
+\pagestyle{plain}
+\clearpage
+
+
+\pagenumbering{arabic}
+\include{chapter1}
+\include{chapter2}
+\include{chapter3}
+\include{chapter4}
+\include{chapter5}
+\include{chapter6}
+\include{chapter7}
+\include{chapter8}
+\include{chapter9}
+\appendix
+%\include{appendix1}
+
+\bibliographystyle{plainurl}
+\bibliography{ref}
+\end{document}

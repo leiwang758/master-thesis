@@ -1,0 +1,53 @@
+This is 8-bit Big BibTeX version 0.99d
+Implementation:  Microsoft(R) C/C++ for Win32
+Release version: 3.71 (04 mar 2019)
+
+The 8-bit codepage and sorting file: 88591lat.csf
+The top-level auxiliary file: ucalgthes1_root_1.aux
+A level-1 auxilliary file: chapter1.aux
+A level-1 auxilliary file: chapter2.aux
+A level-1 auxilliary file: chapter3.aux
+A level-1 auxilliary file: chapter4.aux
+A level-1 auxilliary file: chapter5.aux
+A level-1 auxilliary file: chapter6.aux
+A level-1 auxilliary file: chapter7.aux
+A level-1 auxilliary file: chapter8.aux
+A level-1 auxilliary file: chapter9.aux
+The style file: plainurl.bst
+Reallocated glb_str_ptr (elt_size=4) to 10 items from 0.
+Reallocated global_strs (elt_size=200001) to 10 items from 0.
+Reallocated glb_str_end (elt_size=4) to 10 items from 0.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: ref.bib
+Warning--entry type for "gurobi" isn't style-file defined
+--line 187 of file ref.bib
+Warning--entry type for "CPLEX" isn't style-file defined
+--line 194 of file ref.bib
+Warning--entry type for "networkx" isn't style-file defined
+--line 749 of file ref.bib
+Warning--I didn't find a database entry for ""
+Name 1 in "C. E. Leiserson, R. L. Rivest, T. H. Cormen, and C. Stein" has a comma at the end for entry IntroductiontoAlgorithm
+while executing---line 1415 of file plainurl.bst
+Warning--to sort, need author or key in CPLEX
+Name 1 in "C. E. Leiserson, R. L. Rivest, T. H. Cormen, and C. Stein" has a comma at the end for entry IntroductiontoAlgorithm
+while executing---line 1457 of file plainurl.bst
+Warning--empty booktitle in appconnectedvehicles1
+Warning--empty booktitle in networkxpaper
+Warning--empty booktitle in appvideoanalytics1
+Warning--empty booktitle in appmobilebigdata1
+Warning--empty journal in MECsurvey
+Warning--empty note in nfv_wp
+Warning--empty publisher in C^2MAB
+
+Here's how much of BibTeX's memory you used:
+ Cites:                85 out of 750
+ Fields:             1901 out of 5000
+ Hash table:       199734 out of 200000
+ Strings:            1130 out of 200000
+ Free string pool:  22944 out of 65000
+ Wizard functions:   2882 out of 3000
+(There were 2 error messages)

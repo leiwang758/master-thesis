@@ -1,0 +1,79 @@
+\BOOKMARK [0][-]{section*.1}{Abstract}{}% 1
+\BOOKMARK [0][-]{chapter*.3}{Table of Contents}{}% 2
+\BOOKMARK [0][-]{chapter*.5}{List of Tables}{}% 3
+\BOOKMARK [0][-]{chapter*.7}{List of Figures}{}% 4
+\BOOKMARK [0][-]{chapter*.9}{List of Symbols}{}% 5
+\BOOKMARK [0][-]{chapter.1}{introduction}{}% 6
+\BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.2}{Thesis Objective}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.3}{Thesis Contribution}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.4}{Thesis Organization.}{chapter.1}% 10
+\BOOKMARK [0][-]{chapter.2}{Backround}{}% 11
+\BOOKMARK [1][-]{section.2.1}{Network Function Virtualization}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.1.1}{NFV architecture}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.2}{NFV optimization}{section.2.1}% 14
+\BOOKMARK [1][-]{section.2.2}{Mobile Edge Computing}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.1}{MEC architecture}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.2}{MEC research topics}{section.2.2}% 17
+\BOOKMARK [1][-]{section.2.3}{Service Function Chain}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.3.1}{SFC architecture}{section.2.3}% 19
+\BOOKMARK [2][-]{subsection.2.3.2}{SFC request model}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.3}{SFC orchestration problem}{section.2.3}% 21
+\BOOKMARK [2][-]{subsection.2.3.4}{SFC orchestration optimization approaches}{section.2.3}% 22
+\BOOKMARK [1][-]{section.2.4}{Learning algorithm}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.4.1}{Online learning}{section.2.4}% 24
+\BOOKMARK [2][-]{subsection.2.4.2}{Bandit online learning}{section.2.4}% 25
+\BOOKMARK [1][-]{section.2.5}{Mathematical Tools}{chapter.2}% 26
+\BOOKMARK [2][-]{subsection.2.5.1}{Integer Linear problem}{section.2.5}% 27
+\BOOKMARK [2][-]{subsection.2.5.2}{Dynamic program}{section.2.5}% 28
+\BOOKMARK [1][-]{section.2.6}{Software Tools}{chapter.2}% 29
+\BOOKMARK [2][-]{subsection.2.6.1}{Networkx}{section.2.6}% 30
+\BOOKMARK [2][-]{subsection.2.6.2}{Gurobi}{section.2.6}% 31
+\BOOKMARK [2][-]{subsection.2.6.3}{Mininet-wifi}{section.2.6}% 32
+\BOOKMARK [0][-]{chapter.3}{Related Work}{}% 33
+\BOOKMARK [1][-]{section.3.1}{System-managed Edge-agnostic}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.2}{System-managed Edge-enabled}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.2.1}{Delay-related objective}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.2}{Resource-related objective}{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.3}{Models}{section.3.2}% 38
+\BOOKMARK [2][-]{subsection.3.2.4}{Heuristic approaches}{section.3.2}% 39
+\BOOKMARK [1][-]{section.3.3}{User-managed Edge-agnostic \046 Edge-enabled}{chapter.3}% 40
+\BOOKMARK [0][-]{chapter.4}{Problem Formulation}{}% 41
+\BOOKMARK [1][-]{section.4.1}{System Model}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.1.1}{Network Model}{section.4.1}% 43
+\BOOKMARK [2][-]{subsection.4.1.2}{Service Model}{section.4.1}% 44
+\BOOKMARK [1][-]{section.4.2}{Problem Formulation}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.3}{Complete Problem Formulation}{chapter.4}% 46
+\BOOKMARK [0][-]{chapter.5}{Proposed Method}{}% 47
+\BOOKMARK [1][-]{subsection.5.0.1}{Bandit Formulation}{chapter.5}% 48
+\BOOKMARK [2][-]{subsection.5.0.2}{Placement Algorithm}{subsection.5.0.1}% 49
+\BOOKMARK [2][-]{subsection.5.0.3}{Bandit Formulation Example}{subsection.5.0.1}% 50
+\BOOKMARK [2][-]{subsection.5.0.4}{Delay Estimation and Deployment Considerations}{subsection.5.0.1}% 51
+\BOOKMARK [0][-]{chapter.6}{Delay Estimation framework}{}% 52
+\BOOKMARK [1][-]{section.6.1}{Time stamp in SFC placement}{chapter.6}% 53
+\BOOKMARK [1][-]{section.6.2}{Time-stamped delay estimation example}{chapter.6}% 54
+\BOOKMARK [0][-]{chapter.7}{Simulation Results}{}% 55
+\BOOKMARK [1][-]{section.7.1}{Simulation Settings}{chapter.7}% 56
+\BOOKMARK [2][-]{subsection.7.1.1}{Network Settings}{section.7.1}% 57
+\BOOKMARK [2][-]{subsection.7.1.2}{SFC Settings}{section.7.1}% 58
+\BOOKMARK [2][-]{subsection.7.1.3}{User mobility Settings}{section.7.1}% 59
+\BOOKMARK [2][-]{subsection.7.1.4}{Performance Benchmark.}{section.7.1}% 60
+\BOOKMARK [2][-]{subsection.7.1.5}{Impact of network delays}{section.7.1}% 61
+\BOOKMARK [2][-]{subsection.7.1.6}{Impact of Migration Delay}{section.7.1}% 62
+\BOOKMARK [1][-]{section.7.2}{Convergence performance}{chapter.7}% 63
+\BOOKMARK [2][-]{subsection.7.2.1}{Comparison with an exact offline approach}{section.7.2}% 64
+\BOOKMARK [2][-]{subsection.7.2.2}{Time average regret}{section.7.2}% 65
+\BOOKMARK [2][-]{subsection.7.2.3}{Exploration ratio}{section.7.2}% 66
+\BOOKMARK [2][-]{subsection.7.2.4}{Scalability Analysis}{section.7.2}% 67
+\BOOKMARK [2][-]{subsection.7.2.5}{Running Time Analysis}{section.7.2}% 68
+\BOOKMARK [2][-]{subsection.7.2.6}{Comparison with the greedy approaches.}{section.7.2}% 69
+\BOOKMARK [0][-]{chapter.8}{Mininet-WiFi Experiments}{}% 70
+\BOOKMARK [1][-]{section.8.1}{Experiment setup.}{chapter.8}% 71
+\BOOKMARK [1][-]{section.8.2}{CHANGE performance in Mininet-WiFi.}{chapter.8}% 72
+\BOOKMARK [2][-]{subsection.8.2.1}{Response Time}{section.8.2}% 73
+\BOOKMARK [2][-]{subsection.8.2.2}{User Mobility analysis}{section.8.2}% 74
+\BOOKMARK [2][-]{subsection.8.2.3}{Different network delays}{section.8.2}% 75
+\BOOKMARK [2][-]{subsection.8.2.4}{Different length of SFC.}{section.8.2}% 76
+\BOOKMARK [0][-]{chapter.9}{Conclusion}{}% 77
+\BOOKMARK [1][-]{section.9.1}{Thesis Summary}{chapter.9}% 78
+\BOOKMARK [1][-]{section.9.2}{Future work}{chapter.9}% 79

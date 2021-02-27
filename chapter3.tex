@@ -1,0 +1,148 @@
+\chapter{\textbf{Related Work}}
+This chapter reviews previously proposed works in the literature that solves the SFC placement problem and relevant to our work. Based on their problem model, these algorithms can be broadly grouped into four classes: (i) System-managed Edge-agnostic, (ii) System-managed Edge-enabled, (iii) User-managed Edge-agnostic, (iv)User-managed Edge-enabled. This chapter is divided into four sections, with each section summarizing the algorithms proposes in one class of problem model. The related work overview is summarized in table \ref{tab:related work overview}.
+
+
+
+\section{System-managed Edge-agnostic}
+System-managed SFC placement is based on the assumption that future information (\eg\. user mobility and future demands) and system-wide information (\eg\.  capacity and bandwidth) is know,  works in this category are usually able to formulate their model into one of these models: Integer Linear Program (ILP), Mixed Integer Linear Program (MILP),  mixed-integer quadratically constrained programming (MIQCP).
+
+A large number of works have studied the system-managed SFC placement in NFV-enabled network that is edge-agnostic. Therefore those works usually do not consider factors such as mobility and migration cost, and the objectives can be categorized into three groups: delay-aware, cost-aware, and hybrid. For example, authors in \cite{coDeC} proposed a heuristic algorithm that addresses resource allocation in a System-managed Edge-agnostic model, and their approach is both cost-effective and delay-aware. 
+Authors in \cite{Delay-AwareMulti} consider a delay-aware objective for multicast and multi resources application in NFV-enabled network such as Internet Protocol Television (IPTV), video streaming
+platforms.
+Authors in \cite{AnEnergy-AwareSFCReconfiguration}, however, consider an energy-aware objective and used Genetic Algorithm (GA) to solve the SFC placement in a multi-cloud model.
+
+\section{System-managed Edge-enabled}
+Recently, many works have proposed to deploy MEC application in NFC as service function chains, those works focus mainly on the system-managed edge-enabled SFC placement. We can further deliberate about these works based on their objective, optimization models, and different heuristics.
+
+\subsection{Delay-related objective}
+Many studies address SFC placement intending to minimize the overall delay of SFC. One typical delay model consists of four different communication delays in 1) propagation delay, 2) transmission delay, 3) queuing delay, and 4) processing delay\cite{SFCedgecloud}. 
+\eg, Authors in \cite{clusteredSFCplacement} provide a clustered NFV service chaining scheme that computes the optimal number of clusters to minimize the end-to-end delay for MEC services.
+In dynamic SFC placement, VNF migration or re-location costs are often considered as well\cite{dynamicVNFedge, VNF5G, MABserviceplacement} due to non-negligible configuration cost and transmission delays.
+Specifically, authors in \cite{dynamicVNFedge}, and \cite{MABserviceplacement} also consider user mobility in the model when computing communication delays.
+
+\subsection{Resource-related objective}
+Another primary objective in past publications is the minimization of SFC deployment costs, which is usually expressed as the resources needed to place an SFC. \eg, Authors in \cite{SFCedgecomputingenablednetworks} consider the SFC resource utilization to be an accumulation of CPU, memory, and bandwidth utilization. The same objective is also pursued in \cite{PosterMEC}, in which the same SFC resource utilization attributes are used to formulate the physical network and SFC requests into weighted graphs. Authors in \cite{VNFmonoedgecore} consider the resource optimization with regards to mono- or multi-tenant context.
+Authors in \cite{LatencyAwareMEC} however, consider the maximization of the number of satisfied clients as their objective.  
+Authors in \cite{SFCedgecloud, Delay-awareVNFFlexibleResourceAllocation} consider both delay and resource optimization and try to achieve a balance between these two objectives.
+Besides the objectives above, some studies also consider quality of service (QoS) requirements (e.g., latency, bandwidth, security) in their placement scheme. \cite{ProbabilisticQoSEdge, dynamicVNFedge, VNFmonoedgecore, VNF5G, SFCedgecloud}.
+The authors in  \cite{SFCedgecloud} formulate their objective to consist of the number of computational and
+communication resources for placing the SFC, and the total delay experienced in the SFC paths. Then they jointly optimize the total objectives and find an optimal trade-off.
+Rather than minimizing both delay and resources, the work in \cite{Delay-awareVNFFlexibleResourceAllocation} introduces \textit{Resource-Delay Dependency} to provide a specific end-to-end delay while minimizing resource consumption.
+In \cite{LatencyAwareMEC}, authors aim to maximize the number of satisfied clients, where satisfaction necessitates both the latency constraints and the client's desired network function. 
+
+In our work, we focus on user-managed SFC placement. Therefore we consider the minimization of user-perceived end-to-end delay as our objective.
+% we started from here next time ##################################################
+
+
+\subsection{Models}
+To deal with System-wide SFC placement in cloud \& edge architecture,
+numerous optimization models have been introduced. 
+One standard model of solving the SFC placement problem is to formulate and solve it ILP. Many works have introduced ILP based approaches \cite{dynamicVNFedge, VNFmonoedgecore, SFCedgecloud, VNF5G, SFCedgecomputingenablednetworks} and solve it as a performance benchmark.
+To deal with different optimization objectives for SFC placement, authors in \cite{Delay-awareVNFFlexibleResourceAllocation, clusteredSFCplacement, specifyVNF} formulate their models as MIQCP. 
+In order to jointly minimize a set of requirements, works in \cite{SFCedgecloud, VNF5G} introduce 
+a Mixed Integer Programming (MIP) formulation
+
+Besides formulating the problem into traditional optimization models, some works\cite{PosterMEC, dynamicVNFedge, sfcgeo} also introduce other LP-based models. 
+Authors in \cite{PosterMEC} formulate the SFC placement as the Weighted Graph Matching Problem (WGMAP).
+Authors in \cite{dynamicVNFedge} apply a dynamic scheduler on their ILP model in order to fit it in a real-world scenario. 
+For an augmented cloud infrastructure, the work in \cite{sfcgeo} defines the optimal SFC composition as the integer multi commodity-chain flow problem (MCCF).
+
+\subsection{Heuristic approaches}
+
+Besides using the exact model that solves the problem optimally, most works above \cite{VNFmonoedgecore, SFCedgecloud, VNF5G, PosterMEC, SFCedgecomputingenablednetworks} also propose heuristic-based approaches that can likely achieve a near optimum. These approaches also handle the computational complexity so that it can solve the problem in a polynomial time.
+\eg, authors in \cite{PosterMEC} design a Hungarian-based SFC placement algorithm in MEC and compare it with a heuristic-based greedy algorithm, which shows an efficient reduction in execution time.
+
+Some other work\cite{clusteredSFCplacement,ProbabilisticQoSEdge} only focus on heuristic approaches to solve the problem in order to avoid the complexity of the LP problem or deal with different challenges and contexts, specifically, works in \cite{clusteredSFCplacement} proposed a clustered NFV service chaining scheme in order to reduce the amount of traffic in MEC. As already mentioned before, SFC placement has already been used in different applications such as visual computing\cite{sfcgeo} and SFC placement can often be solved within a different context in different scenarios. \eg, \cite{VNFmonoedgecore} solves the SFC placement problem allowing adequate management of rare resources to address the multi-tenant issue in edge and core network, some work such as \cite{VNF5G} consider the total response time to get the service ensuring user Quality of Service in 5G networks. Authors in \cite{sfcgeo} address the geo-distributed latency-sensitive SFC placement problem using trace-driven simulations comprising of challenging disaster-incident conditions. 
+However, the works mentioned above mainly focus on the system-wide SFC placement, where the scheduler or agent knows the complete system-wide information and considers one-shot offline optimization. Our work, however, focuses on user-managed online SFC placement that conducts optimization at run time to adapt to network dynamics and unknown future demands and available resources.
+
+\section{User-managed Edge-agnostic \& Edge-enabled}
+
+On the user-managed service placement, where the user makes decisions based on their interactions with the environment, many reinforcement-learning-based approaches \cite{learningbasedvnf, QPlacement, Environment-AdaptiveRL, OnlineFault-tolerantDRL, NFVdeep, RLCellularnetwork, ScaRL, QuantummachinelearningSFCMEC} has been proposed to solve the online SFC placement problem. 
+For example, Q-placement\cite{QPlacement} is proposed to optimally place services in an iterative manner with guaranteed performance and convergence rate. Authors in \cite{Environment-AdaptiveRL} proposed an accelerated RL method that divides the learning process into two steps in order to deal with numerous explorations in real networks. %Double Deep Q-networks Placement (DDQP) is proposed to cope with the complex and unpredictable network state in \cite{OnlineFault-tolerantDRL}, in which they are able to achieve a fault-tolerant behavior.
+% Authors in \cite{learningbasedvnf} propose an algorithm that is based on the best‐fit-decreasing algorithm, in which they use automata theory, correlation coefficient, and ensemble prediction algorithm to make better decisions in SFC placement of cloud data centers.
+ScaRL is proposed in \cite{ScaRL} that leverages reinforcement learning to solve SFC allocation in MEC by using its trial-and-error mechanism.
+%
+As an improved version of reinforcement learning, deep reinforcement learning (DRL) is proposed in 
+\cite{NFVdeep, Parallel-Deep-Reinforcement-Learning, OnlineFault-tolerantDRL} in order to address a more complex and dynamic problem state. e.g. \cite{NFVdeep} introduce Markov decision process (MDP) model to capture the dynamic network state transitions and proposed DRL to deploy SFCs automatically.
+%
+In \cite{QuantummachinelearningSFCMEC}, a novel machine learning approach based on quantum physics is proposed to solve SFC placement in massive data scenarios such as dynamic SFC placement on edge clouds.
+%
+Specifically, \cite{ScaRL, QuantummachinelearningSFCMEC} both solve the SFC placement in a MEC context and define the computing resources of the edge server as the state set in the learning framework. 
+
+However, Most of these works lack considerations of some of the critical features in edge-enabled SFC placement. 
+For example, most of them fail to consider an edge-enabled application scenario: \cite{ QPlacement, Environment-AdaptiveRL, NFVdeep} focus on general SDN, \cite{learningbasedvnf, OnlineFault-tolerantDRL} focus on traditional core cloud data centers and \cite{RLCellularnetwork} focus on 5G networks. 
+%
+Most works \cite{Environment-AdaptiveRL, OnlineFault-tolerantDRL, QPlacement, ScaRL, NFVdeep, RLCellularnetwork, Parallel-Deep-Reinforcement-Learning, QuantummachinelearningSFCMEC} do not consider VNF migration.
+%
+Other works like~\cite{learningbasedvnf, RLCellularnetwork} does not consider the user-specific request, and none of the above works consider users' mobility.
+% 
+Besides lacking the context consideration in MEC, none of these solve SFC placement in a combinatorial manner, which means that the reward function of the learning objectives in these work is often defined to be the reward of one complete SFC, this will not only ignore the rewards on independent nodes and links but also make the action space of selecting SFCs exponential. The overview of related work is summarized in table \ref{tab:related work overview}.
+
+Our work is inspired by the advantage of using multi-armed bandit model \cite{MABserviceplacement} to overcome the challenges of lacking both future and system-wide information in \myproblem\ and using contextual combinatorial MAB \cite{C^2MAB} to characterize the dynamic context of the mobile user and the feature observed on each single arms such as each node and link.
+%
+To fill the scarcity of MEC-related and user-managed consideration in SFC placement studies, we proposed a novel online-learning SFC orchestration approach with a Combinatorial Contextual Multi-arm Bandit ($\text{C}^2\text{MAB}$) framework that are able to not only predict users' preference by utilizing user-specific and edge-enabled context but also able to solve the SFC placement problem in a combinatorial manner that allows user to focus on the primitive options.
+
+
+
+
+
+\begin{table}[]
+	\caption{Related work overview}
+	\centering
+	\setcellgapes{3pt}\makegapedcells
+	\resizebox{\columnwidth}{!}{\begin{tabular}{ |c|c|c|c|c|}
+			\hline
+			\textbf{Works} & \textbf{\makecell{Models}} & \textbf{\makecell{Heuristic \\ approaches}} & \textbf{online}& \textbf{Objective}\\
+			\hline
+			\cite{dynamicVNFedge}  &  ILP  & \xmark & \xmark&  \makecell{Minimize end-to-end latency\\ from all users to their respective VNFs}\\
+			\hline
+			\cite{VNF5G}           &  MILP  & Ant Colony Optimization  &  \xmark&\makecell{Minimize total VNF relocation \\ and total response time }\\
+			\hline
+			\cite{SFCedgecloud}     &  MILP  & Tabu Search  &  \xmark&\makecell{Minimize
+				the end-to-end communication \\and the overall deployment cost}\\
+			\hline
+			\cite{PosterMEC}       &  WGMP  & Hungarian-based placement &  \xmark&\makecell{Minimize the total resource consumption \\ and algorithm execution time}\\
+			\hline
+			\cite{SFCedgecomputingenablednetworks}  &  ILP  & Priority based Greedy &  \xmark&Minimize the total resource consumption\\
+			\hline
+			\cite{clusteredSFCplacement}   &  MIQCP  & cluster based &  \xmark& Minimize the average service time\\
+			\hline
+			\cite{VNFmonoedgecore}   &  ILP  & \xmark &  \xmark&Minimize the total resource consumption\\
+			\hline
+			\cite{ProbabilisticQoSEdge}   &  \xmark  & EdgeUser &  \xmark&Maximize tolerated latency for SFC\\
+			\hline
+			\cite{Delay-awareVNFFlexibleResourceAllocation}   &  MIQCP  & \xmark &  \xmark&Minimize resource consumption\\
+			\hline
+			\cite{sfcgeo}   & MCCF  & metapath composite variable &  \xmark&\makecell{Minimize a sum of SFC demands and \\ corresponding physical resource capacity ratios}\\
+			\hline
+			\cite{learningbasedvnf}   &  \xmark  & best‐fit decreasing& \cmark&Minimize energy consumption\\
+			\hline
+			\cite{QPlacement}   &  \xmark  & Reinforcement Learning &  \cmark& \makecell{Minimize the average service cost\\ for end users}\\
+			\hline
+			\cite{MABserviceplacement}   &  ILP & \makecell{contextual multi-armed bandit} &  \cmark&Minimize the total service cost\\
+			\hline
+			\cite{ScaRL}   &  ILP  & Reinforcement Learning &  \cmark& \makecell{minimize the transmission latency \\ and processing latency}\\
+			\hline
+			\cite{LatencyAwareMEC}   & ILP  & $(1-1/e)$ deterministic  & \xmark& \makecell{Maximize the number of satisfied clients}\\
+			\hline
+			\cite{specifyVNF}   &  MIQCP  & \xmark & \cmark& \makecell{Maximize the remaining data}\\
+			\hline
+			\cite{Environment-AdaptiveRL} & \xmark & Reinforcement Learning & \cmark& \makecell{throughput latency ratio} \\
+			\hline
+			\cite{NFVdeep} & MDP &Deep Reinforcement Learning & \cmark &
+			\makecell{minimize the operation cost \\ and maximize the total throughput}\\
+			\hline
+			\cite{QuantummachinelearningSFCMEC} &ILP & Quantum machine learning&\cmark &
+			\makecell{Minimize the end-to-end delay}\\
+			\hline
+			\cite{Parallel-Deep-Reinforcement-Learning}&\xmark  & Deep Reinforcement Learning  &\cmark&\makecell{Minimize the resource cost}\\
+			\hline
+			\cite{RLCellularnetwork} &\xmark & Reinforcement Learning &\cmark&
+			\makecell{Minimizing energy consumption \\ of allocating new VNFs}\\
+			\hline
+			Our work  &  ILP  & BandEdge &\cmark & \makecell{Minimize the average response time}\\
+			\hline
+	\end{tabular}}
+	
+	\label{tab:related work overview}
+\end{table}

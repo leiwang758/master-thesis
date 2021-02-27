@@ -1,0 +1,573 @@
+\begin{thebibliography}{10}
+
+\bibitem{CPLEX}
+Cplex, 2019.
+\newblock URL: \url{http://www.gurobi.com}.
+
+\bibitem{abdelwahab2015replisom}
+Sherif Abdelwahab, Bechir Hamdaoui, Mohsen Guizani, and Taieb Znati.
+\newblock Replisom: Disciplined tiny memory replication for massive iot devices
+  in lte edge cloud.
+\newblock {\em IEEE Internet of Things Journal}, 3(3):327--338, 2015.
+
+\bibitem{appoceanmonotoring1}
+Ejaz Ahmed and Mubashir~Husain Rehmani.
+\newblock Mobile edge computing: Opportunities, solutions, and challenges.
+\newblock {\em Future Generation Computer Systems}, 70:59 -- 63, 2017.
+
+\bibitem{6G_beyond}
+I.~F. {Akyildiz}, A.~{Kak}, and S.~{Nie}.
+\newblock 6g and beyond: The future of wireless communications systems.
+\newblock {\em IEEE Access}, 8:133995--134030, 2020.
+
+\bibitem{Delay-awareVNFFlexibleResourceAllocation}
+A.~{Alleg}, T.~{Ahmed}, M.~{Mosbah}, R.~{Riggio}, and R.~{Boutaba}.
+\newblock Delay-aware vnf placement and chaining based on a flexible resource
+  allocation approach.
+\newblock In {\em Proc. 13th International Conference on Network and Service
+  Management (CNSM)}, pages 1--7, 2017.
+
+\bibitem{beck2015me}
+Michael~Till Beck, Sebastian Feld, Andreas Fichtner, Claudia Linnhoff-Popien,
+  and Thomas Schimper.
+\newblock Me-volte: Network functions for energy-efficient video transcoding at
+  the mobile edge.
+\newblock In {\em 2015 18th International Conference on Intelligence in Next
+  Generation Networks}, pages 38--44. IEEE, 2015.
+
+\bibitem{bettstetter2004stochastic}
+Christian Bettstetter, Hannes Hartenstein, and Xavier P{\'e}rez-Costa.
+\newblock Stochastic properties of the random waypoint mobility model.
+\newblock {\em Wireless Networks}, 10(5):555--567, 2004.
+
+\bibitem{ProbabilisticQoSEdge}
+Antonio Brogi, Stefano Forti, and Federica Paganelli.
+\newblock Probabilistic qos-aware placement of {VNF} chains at the edge.
+\newblock {\em CoRR}, abs/1906.00197, 2019.
+\newblock \href {http://arxiv.org/abs/1906.00197} {\path{arXiv:1906.00197}}.
+
+\bibitem{IntroductiontoAlgorithm}
+T.~H.~Cormen C.~E.~Leiserson, R. L.~Rivest and C.~Stein.
+\newblock {\em Introduction to algorithms.}, volume~1.
+\newblock MIT press, Cambridge, MA, 2001.
+
+\bibitem{Parallel-Deep-Reinforcement-Learning}
+H.~{Chai}, J.~{Zhang}, Z.~{Wang}, J.~{Shi}, and T.~{Huang}.
+\newblock A parallel placement approach for service function chain using deep
+  reinforcement learning.
+\newblock In {\em Proc. IEEE 5th International Conference on Computer and
+  Communications (ICCC)}, pages 2123--2128, 2019.
+
+\bibitem{sfcgeo}
+D.~{Chemodanov}, P.~{Calyam}, and F.~{Esposito}.
+\newblock A near optimal reliable composition approach for geo-distributed
+  latency-sensitive service chains.
+\newblock In {\em Proc. IEEE INFOCOM}, pages 1792--1800, 2019.
+
+\bibitem{chen2019framework}
+De-Yu Chen and Magda El-Zarki.
+\newblock A framework for adaptive residual streaming for single-player cloud
+  gaming.
+\newblock {\em ACM Transactions on Multimedia Computing, Communications, and
+  Applications (TOMM)}, 15(2):1--23, 2019.
+
+\bibitem{Spatio_temporal_TWC}
+L.~{Chen}, J.~{Xu}, S.~{Ren}, and P.~{Zhou}.
+\newblock Spatio–temporal edge service placement: A bandit learning approach.
+\newblock {\em IEEE Trans. Wireless Commun.}, 17(12):8388--8401, 2018.
+
+\bibitem{ccmab}
+Lixing Chen, Jie Xu, and Zhuo Lu.
+\newblock Contextual combinatorial multi-armed bandits with volatile arms and
+  submodular reward.
+\newblock In S.~Bengio, H.~Wallach, H.~Larochelle, K.~Grauman, N.~Cesa-Bianchi,
+  and R.~Garnett, editors, {\em Advances in Neural Information Processing
+  Systems 31}, pages 3247--3256. Curran Associates, Inc., 2018.
+
+\bibitem{colocatingService}
+W.~{Chen}, K.~{Ye}, and C.~{Xu}.
+\newblock Co-locating online workload and offline workload in the cloud: An
+  interference analysis.
+\newblock In {\em Proc. IEEE HPCC/SmartCity/DSS}, pages 2278--2283, 2019.
+
+\bibitem{chen2013combinatorial}
+Wei Chen, Yajun Wang, and Yang Yuan.
+\newblock Combinatorial multi-armed bandit: General framework and applications.
+\newblock In {\em Proc. International Conference on Machine Learning}, pages
+  151--159, 2013.
+
+\bibitem{chen2015efficient}
+Xu~Chen, Lei Jiao, Wenzhong Li, and Xiaoming Fu.
+\newblock Efficient multi-user computation offloading for mobile-edge cloud
+  computing.
+\newblock {\em IEEE/ACM Transactions on Networking}, 24(5):2795--2808, 2015.
+
+\bibitem{dynamicVNFedge}
+R.~{Cziva}, C.~{Anagnostopoulos}, and D.~P. {Pezaros}.
+\newblock Dynamic, latency-optimal vnf placement at the network edge.
+\newblock In {\em Proc. IEEE INFOCOM}, pages 693--701, April 2018.
+\newblock \href {https://doi.org/10.1109/INFOCOM.2018.8486021}
+  {\path{doi:10.1109/INFOCOM.2018.8486021}}.
+
+\bibitem{containerNFV}
+R.~{Cziva} and D.~P. {Pezaros}.
+\newblock Container network functions: Bringing nfv to the network edge.
+\newblock {\em IEEE Communications Magazine}, 55(6):24--31, 2017.
+
+\bibitem{appconnectedvehicles1}
+Soumya~Kanti Datta, Christian Bonnet, and Jérôme Härri.
+\newblock Fog computing architecture to enable consumer centric internet of
+  things services.
+\newblock pages 1--2, 06 2015.
+\newblock \href {https://doi.org/10.1109/ISCE.2015.7177778}
+  {\path{doi:10.1109/ISCE.2015.7177778}}.
+
+\bibitem{networkx}
+NetworkX developers.
+\newblock Network analysis in python.
+\newblock URL: \url{https://networkx.github.io/}.
+
+\bibitem{MECwhitepaper}
+M.~{Patel} et~al.
+\newblock Mobile-edge computing—introductory technical white paper.
+\newblock In {\em White paper, Mobile-Edge Computing (MEC) Industry
+  Initiative}, 2014.
+
+\bibitem{mininetwifi}
+R.~R. {Fontes}, S.~{Afzal}, S.~H.~B. {Brito}, M.~A.~S. {Santos}, and C.~E.
+  {Rothenberg}.
+\newblock Mininet-wifi: Emulating software-defined wireless networks.
+\newblock In {\em Proc. 11th International Conference on Network and Service
+  Management (CNSM)}, pages 384--389, 2015.
+
+\bibitem{miniwifipaper}
+R.~R. {Fontes}, S.~{Afzal}, S.~H.~B. {Brito}, M.~A.~S. {Santos}, and C.~E.
+  {Rothenberg}.
+\newblock Mininet-wifi: Emulating software-defined wireless networks.
+\newblock In {\em 2015 11th International Conference on Network and Service
+  Management (CNSM)}, pages 384--389, 2015.
+\newblock \href {https://doi.org/10.1109/CNSM.2015.7367387}
+  {\path{doi:10.1109/CNSM.2015.7367387}}.
+
+\bibitem{forecast2019cisco}
+GMDT Forecast.
+\newblock Cisco visual networking index: global mobile data traffic forecast
+  update, 2017--2022.
+\newblock {\em Update}, 2017:2022, 2019.
+
+\bibitem{gao2014opportunistic}
+Wei Gao.
+\newblock Opportunistic peer-to-peer mobile cloud computing at the tactical
+  edge.
+\newblock In {\em 2014 IEEE Military Communications Conference}, pages
+  1614--1620. IEEE, 2014.
+
+\bibitem{visualcomputing}
+R.~{Gargees}, B.~{Morago}, R.~{Pelapur}, D.~{Chemodanov}, P.~{Calyam},
+  Z.~{Oraibi}, Y.~{Duan}, G.~{Seetharaman}, and K.~{Palaniappan}.
+\newblock Incident-supporting visual cloud computing utilizing software-defined
+  networking.
+\newblock {\em IEEE Transactions on Circuits and Systems for Video Technology},
+  27(1):182--197, Jan 2017.
+\newblock \href {https://doi.org/10.1109/TCSVT.2016.2564898}
+  {\path{doi:10.1109/TCSVT.2016.2564898}}.
+
+\bibitem{koMON}
+S.~{Geissler}, S.~{Lange}, F.~{Wamser}, T.~{Zinner}, and T.~{Hoßfeld}.
+\newblock Komon — kernel-based online monitoring of vnf packet processing
+  times.
+\newblock In {\em Proc. International Conference on Networked Systems
+  (NetSys)}, pages 1--8, March 2019.
+\newblock \href {https://doi.org/10.1109/NetSys.2019.8854514}
+  {\path{doi:10.1109/NetSys.2019.8854514}}.
+
+\bibitem{learningbasedvnf}
+Mostafa Ghobaei-Arani, Ali~Asghar Rahmanian, Mahboubeh Shamsi, and Abdolreza
+  Rasouli-Kenari.
+\newblock A learning-based approach for virtual machine placement in cloud data
+  centers.
+\newblock {\em International Journal of Communication Systems}, 31(8):e3537,
+  2018.
+\newblock e3537 IJCS-17-0421.R1.
+\newblock \href
+  {http://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1002/dac.3537}
+  {\path{arXiv:https://onlinelibrary.wiley.com/doi/pdf/10.1002/dac.3537}},
+  \href {https://doi.org/10.1002/dac.3537} {\path{doi:10.1002/dac.3537}}.
+
+\bibitem{gurobi}
+LLC Gurobi~Optimization.
+\newblock Gurobi optimizer reference manual, 2019.
+\newblock URL: \url{http://www.gurobi.com}.
+
+\bibitem{networkxpaper}
+Aric Hagberg, Pieter Swart, and Daniel Chult.
+\newblock Exploring network structure, dynamics, and function using networkx.
+\newblock 01 2008.
+
+\bibitem{LatencyAwareMEC}
+D.~{Harris}, J.~{Naor}, and D.~{Raz}.
+\newblock Latency aware placement in multi-access edge computing.
+\newblock In {\em Proc. IEEE Conference on Network Softwarization and Workshops
+  (NetSoft)}, pages 132--140, June 2018.
+\newblock \href {https://doi.org/10.1109/NETSOFT.2018.8459997}
+  {\path{doi:10.1109/NETSOFT.2018.8459997}}.
+
+\bibitem{herrera2016resource}
+Juliver~Gil Herrera and Juan~Felipe Botero.
+\newblock Resource allocation in nfv: A comprehensive survey.
+\newblock {\em IEEE Transactions on Network and Service Management},
+  13(3):518--532, 2016.
+
+\bibitem{hoi2018online}
+Steven~CH Hoi, Doyen Sahoo, Jing Lu, and Peilin Zhao.
+\newblock Online learning: A comprehensive survey.
+\newblock {\em arXiv preprint arXiv:1802.02871}, 2018.
+
+\bibitem{appvideoanalytics1}
+Kirak Hong, David Lillethun, Umakishore Ramachandran, Beate Ottenwälder, and
+  Boris Koldehofe.
+\newblock Mobile fog: A programming model for large-scale applications on the
+  internet of things.
+\newblock pages 15--20, 08 2013.
+\newblock \href {https://doi.org/10.1145/2491266.2491270}
+  {\path{doi:10.1145/2491266.2491270}}.
+
+\bibitem{mec_wp}
+YunChao Hu, Milan Patel, Dario Sabella, Nurit Sprecher, and Valerie Young.
+\newblock Mobile edge computing: A key technology towards 5g.
+\newblock In {\em ETSI White paper}, 2015.
+
+\bibitem{rwp}
+Esa Hyyti\"{a} and Jorma Virtamo.
+\newblock Random waypoint mobility model in cellular networks.
+\newblock {\em Wirel. Netw.}, 13(2):177–188, April 2007.
+\newblock \href {https://doi.org/10.1007/s11276-006-4600-3}
+  {\path{doi:10.1007/s11276-006-4600-3}}.
+
+\bibitem{jararweh2016sdmec}
+Yaser Jararweh, Ahmad Doulat, Ala Darabseh, Mohammad Alsmirat, Mahmoud
+  Al-Ayyoub, and Elhadj Benkhelifa.
+\newblock Sdmec: Software defined system for mobile edge computing.
+\newblock In {\em 2016 IEEE International Conference on Cloud Engineering
+  Workshop (IC2EW)}, pages 88--93. IEEE, 2016.
+
+\bibitem{ScaRL}
+Q.~{Jin}, S.~{Ge}, J.~{Zeng}, X.~{Zhou}, and T.~{Qiu}.
+\newblock Scarl: Service function chain allocation based on reinforcement
+  learning in mobile edge computing.
+\newblock In {\em Proc. Seventh International Conference on Advanced Cloud and
+  Big Data (CBD)}, pages 327--332, Sep. 2019.
+\newblock \href {https://doi.org/10.1109/CBD.2019.00065}
+  {\path{doi:10.1109/CBD.2019.00065}}.
+
+\bibitem{AnEnergy-AwareSFCReconfiguration}
+S.~{Kim}, Y.~{Han}, and S.~{Park}.
+\newblock An energy-aware service function chaining and reconfiguration
+  algorithm in nfv.
+\newblock In {\em Proc. IEEE 1st International Workshops on Foundations and
+  Applications of Self* Systems (FAS*W)}, pages 54--59, 2016.
+
+\bibitem{appwsn1}
+Paweł Kułakowski, Eusebi Calle, and Jose~L. Marzo.
+\newblock Performance study of wireless sensor and actuator networks in forest
+  fire scenarios.
+\newblock {\em International Journal of Communication Systems}, 26(4):515--529,
+  2013.
+
+\bibitem{kumar2016vehicular}
+Neeraj Kumar, Sherali Zeadally, and Joel~JPC Rodrigues.
+\newblock Vehicular delay-tolerant networks for smart grid data management
+  using mobile edge computing.
+\newblock {\em IEEE Communications Magazine}, 54(10):60--66, 2016.
+
+\bibitem{SFCrequestsetting}
+J.~{Kwak}, Y.~{Kim}, J.~{Lee}, and S.~{Chong}.
+\newblock Dream: Dynamic resource and task allocation for energy minimization
+  in mobile cloud systems.
+\newblock {\em IEEE Journal on Selected Areas in Communications},
+  33(12):2510--2523, 2015.
+
+\bibitem{appmobilebigdata1}
+Juha Laurila, Daniel Gatica-Perez, Imad Aad, Jan Blom, Olivier Bornet, T.-M.-T
+  Do, Olivier Dousse, Julien Eberle, and Markus Miettinen.
+\newblock The mobile data challenge: Big data for mobile computing research.
+  nokia research center.
+\newblock 01 2012.
+
+\bibitem{SFCedgecloud}
+Aris Leivadeas, George Kesidis, Mohamed Ibnkahla, and Ioannis Lambadaris.
+\newblock Vnf placement optimization at the edge and cloud †.
+\newblock {\em Future Internet}, 11(3), 2019.
+\newblock URL: \url{https://www.mdpi.com/1999-5903/11/3/69}, \href
+  {https://doi.org/10.3390/fi11030069} {\path{doi:10.3390/fi11030069}}.
+
+\bibitem{SFCedgecomputingenablednetworks}
+Defang Li, Peilin Hong, Kaiping Xue, and Jianing Pei.
+\newblock Virtual network function placement and resource optimization in nfv
+  and edge computing enabled networks.
+\newblock {\em Computer Networks}, 152:12 -- 24, 2019.
+\newblock \href {https://doi.org/https://doi.org/10.1016/j.comnet.2019.01.036}
+  {\path{doi:https://doi.org/10.1016/j.comnet.2019.01.036}}.
+
+\bibitem{QuantummachinelearningSFCMEC}
+Y.~{Liu}, H.~{Lu}, X.~{Li}, D.~{Zhao}, W.~{Wu}, and G.~{Lu}.
+\newblock A novel approach for service function chain dynamic orchestration in
+  edge clouds.
+\newblock {\em IEEE Communications Letters}, pages 1--1, 2020.
+
+\bibitem{ma2013mobile}
+Xiaoqiang Ma, Yuan Zhao, Lei Zhang, Haiyang Wang, and Limei Peng.
+\newblock When mobile terminals meet the cloud: computation offloading as the
+  bridge.
+\newblock {\em IEEE Network}, 27(5):28--33, 2013.
+
+\bibitem{appsmartgrid1}
+R.~{Mahmud}, R.~{Vallakati}, A.~{Mukherjee}, P.~{Ranganathan}, and
+  A.~{Nejadpak}.
+\newblock A survey on smart grid metering infrastructures: Threats and
+  solutions.
+\newblock In {\em Proc. IEEE International Conference on Electro/Information
+  Technology (EIT)}, pages 386--391, 2015.
+
+\bibitem{OnlineFault-tolerantDRL}
+W.~{Mao}, L.~{Wang}, J.~{Zhao}, and Y.~{Xu}.
+\newblock Online fault-tolerant vnf chain placement: A deep reinforcement
+  learning approach.
+\newblock In {\em Proc. IFIP Networking Conference}, pages 163--171, 2020.
+
+\bibitem{MECsurvey}
+Yuyi Mao, Changsheng You, Jun Zhang, Kaibin Huang, and Khaled Letaief.
+\newblock Mobile edge computing: Survey and research outlook.
+\newblock 01 2017.
+
+\bibitem{medhat2016service}
+Ahmed~M Medhat, Tarik Taleb, Asma Elmangoush, Giuseppe~A Carella, Stefan
+  Covaci, and Thomas Magedanz.
+\newblock Service function chaining in next generation networks: State of the
+  art and research challenges.
+\newblock {\em IEEE Communications Magazine}, 55(2):216--223, 2016.
+
+\bibitem{specifyVNF}
+S.~{Mehraghdam}, M.~{Keller}, and H.~{Karl}.
+\newblock Specifying and placing chains of virtual network functions.
+\newblock In {\em Proc. IEEE 3rd International Conference on Cloud Networking
+  (CloudNet)}, pages 7--13, 2014.
+
+\bibitem{VNFmonoedgecore}
+Cedric Morin, G{\'e}raldine Texier, Christelle Caillouet, Gilles Desmangles,
+  and Cao-Thanh Phan.
+\newblock {VNF placement algorithms to address the mono- and multi-tenant
+  issues in edge and core networks}.
+\newblock In {\em Proc. 8th IEEE CLOUDNET}, Coimbra, Portugal, November 2019.
+\newblock URL: \url{https://hal.archives-ouvertes.fr/hal-02313403}.
+
+\bibitem{Delay-AwareMulti}
+A.~{Muhammad}, L.~{Qu}, and C.~{Assi}.
+\newblock Delay-aware multi-source multicast resource optimization in
+  nfv-enabled network.
+\newblock In {\em Proc. IEEE International Conference on Communications (ICC)},
+  pages 1--7, 2020.
+
+\bibitem{Environment-AdaptiveRL}
+M.~{Nakanoya}, Y.~{Sato}, and H.~{Shimonishi}.
+\newblock Environment-adaptive sizing and placement of nfv service chains with
+  accelerated reinforcement learning.
+\newblock In {\em Proc. IFIP/IEEE Symposium on Integrated Network and Service
+  Management (IM)}, pages 36--44, 2019.
+
+\bibitem{clusteredSFCplacement}
+Y.~{Nam}, S.~{Song}, and J.~{Chung}.
+\newblock Clustered nfv service chaining optimization in mobile edge clouds.
+\newblock {\em IEEE Communications Letters}, 21(2):350--353, Feb 2017.
+\newblock \href {https://doi.org/10.1109/LCOMM.2016.2618788}
+  {\path{doi:10.1109/LCOMM.2016.2618788}}.
+
+\bibitem{minh_tnsm_20}
+M.~{Nguyen}, M.~{Dolati}, and M.~{Ghaderi}.
+\newblock Deadline-aware {SFC} orchestration under demand uncertainty.
+\newblock {\em IEEE TNSM}, 17(4):2275--2290, 2020.
+
+\bibitem{nunna2015enabling}
+Swaroop Nunna, Apostolos Kousaridas, Mohamed Ibrahim, Markus Dillinger,
+  Christoph Thuemmler, Hubertus Feussner, and Armin Schneider.
+\newblock Enabling real-time context-aware collaboration through 5g and mobile
+  edge computing.
+\newblock In {\em 2015 12th International Conference on Information
+  Technology-New Generations}, pages 601--605. IEEE, 2015.
+
+\bibitem{MABserviceplacement}
+T.~{Ouyang}, R.~{Li}, X.~{Chen}, Z.~{Zhou}, and X.~{Tang}.
+\newblock Adaptive user-managed service placement for mobile edge computing: An
+  online learning approach.
+\newblock In {\em Proc. IEEE INFOCOM}, pages 1468--1476, April 2019.
+\newblock \href {https://doi.org/10.1109/INFOCOM.2019.8737560}
+  {\path{doi:10.1109/INFOCOM.2019.8737560}}.
+
+\bibitem{nfv_wp}
+NFV~White Paper.
+\newblock Network functions virtualisation: An introduction, benefits,
+  enablers, challenges & call for action. issue 1.
+\newblock October 2012.
+
+\bibitem{C^2MAB}
+Lijing Qin, Shouyuan Chen, and Xiaoyan Zhu.
+\newblock {\em Contextual Combinatorial Bandit and its Application on
+  Diversified Online Recommendation}, pages 461--469.
+\newblock 04 2014.
+\newblock \href {https://doi.org/10.1137/1.9781611973440.53}
+  {\path{doi:10.1137/1.9781611973440.53}}.
+
+\bibitem{CloudTrans_2020}
+P.~{Ren}, X.~{Qiao}, Y.~{Huang}, et~al.
+\newblock Edge ar x5: An edge-assisted multi-user collaborative framework for
+  mobile web augmented reality in 5g and beyond.
+\newblock {\em IEEE Trans. Cloud Comput.}, pages 1--1, 2020.
+
+\bibitem{VNF5G}
+Palash Roy, Anika Tahsin, Sujan Sarker, Tamal Adhikary, Md.~Abdur Razzaque, and
+  Mohammad~Mehedi Hassan.
+\newblock User mobility and quality-of-experience aware placement of virtual
+  network functions in 5g.
+\newblock {\em Computer Communications}, 150:367 -- 377, 2020.
+
+\bibitem{RLCellularnetwork}
+Guto~Leoni Santos and Patricia~Takako Endo.
+\newblock Using reinforcement learning to allocate and manage service function
+  chains in cellular networks, 2020.
+\newblock \href {http://arxiv.org/abs/2006.07349} {\path{arXiv:2006.07349}}.
+
+\bibitem{sardellitti2015joint}
+Stefania Sardellitti, Gesualdo Scutari, and Sergio Barbarossa.
+\newblock Joint optimization of radio and computational resources for multicell
+  mobile-edge computing.
+\newblock {\em IEEE Transactions on Signal and Information Processing over
+  Networks}, 1(2):89--103, 2015.
+
+\bibitem{SFCsettingsapp}
+M.~{Savi}, M.~{Tornatore}, and G.~{Verticale}.
+\newblock Impact of processing costs on service chain placement in network
+  functions virtualization.
+\newblock In {\em Proc. IEEE Conference on Network Function Virtualization and
+  Software Defined Network (NFV-SDN)}, pages 191--197, 2015.
+
+\bibitem{appsdn1}
+Seungwon Shin and Guofei Gu.
+\newblock Attacking software-defined networks: A first feasibility study.
+\newblock In {\em Proc. ACM SIGCOMM Workshop on Hot Topics in Software Defined
+  Networking}, page 165–166, 2013.
+
+\bibitem{soyata2012cloud}
+Tolga Soyata, Rajani Muraleedharan, Colin Funai, Minseok Kwon, and Wendi
+  Heinzelman.
+\newblock Cloud-vision: Real-time face recognition using a
+  mobile-cloudlet-cloud acceleration architecture.
+\newblock In {\em Proc. 2012 IEEE symposium on computers and communications
+  (ISCC)}, pages 000059--000066. IEEE, 2012.
+
+\bibitem{sutton1998introduction}
+Richard~S Sutton, Andrew~G Barto, et~al.
+\newblock {\em Introduction to reinforcement learning}, volume 135.
+\newblock MIT press Cambridge, 1998.
+
+\bibitem{takahashi2015analysis}
+Noriyuki Takahashi, Hiroyuki Tanaka, and Ryutaro Kawamura.
+\newblock Analysis of process assignment in multi-tier mobile cloud computing
+  and application to edge accelerated web browsing.
+\newblock In {\em 2015 3rd IEEE International Conference on Mobile Cloud
+  Computing, Services, and Engineering}, pages 233--234. IEEE, 2015.
+
+\bibitem{coDeC}
+F.~{Tashtarian}, M.~F. {Zhani}, B.~{Fatemipour}, and D.~{Yazdani}.
+\newblock Codec: A cost-effective and delay-aware sfc deployment.
+\newblock {\em IEEE Transactions on Network and Service Management},
+  17(2):793--806, 2020.
+
+\bibitem{team2012mininet}
+Mininet Team.
+\newblock Mininet an instant virtual network on your laptop (or other pc),
+  2012.
+
+\bibitem{SDNTimeSyn}
+M.~T. {Thi}, S.~{Ben Hadj Said}, and M.~{Boc}.
+\newblock Sdn-based management solution for time synchronization in tsn
+  networks.
+\newblock In {\em Proc. 25th IEEE International Conference on Emerging
+  Technologies and Factory Automation (ETFA)}, volume~1, pages 361--368, 2020.
+
+\bibitem{PosterMEC}
+Meng Wang, Bo~Cheng, and Junliang Chen.
+\newblock Poster: A linear programming approach for sfc placement in mobile
+  edge computing.
+\newblock In {\em Proc. 25th Annual International Conference on Mobile
+  Computing and Networking}, MobiCom ’19, New York, NY, USA, 2019.
+  Association for Computing Machinery.
+\newblock \href {https://doi.org/10.1145/3300061.3343394}
+  {\path{doi:10.1145/3300061.3343394}}.
+
+\bibitem{NFVdeep}
+Yikai Xiao, Qixia Zhang, Fangming Liu, Jia Wang, Miao Zhao, Zhongxing Zhang,
+  and Jiaxing Zhang.
+\newblock Nfvdeep: Adaptive online service function chain deployment with deep
+  reinforcement learning.
+\newblock In {\em Proc. International Symposium on Quality of Service}, IWQoS
+  '19, New York, NY, USA, 2019. Association for Computing Machinery.
+\newblock \href {https://doi.org/10.1145/3326285.3329056}
+  {\path{doi:10.1145/3326285.3329056}}.
+
+\bibitem{xie2016service}
+Yanghao Xie, Zhixiang Liu, Sheng Wang, and Yuxiu Wang.
+\newblock Service function chaining resource allocation: A survey, 2016.
+\newblock \href {http://arxiv.org/abs/1608.00095} {\path{arXiv:1608.00095}}.
+
+\bibitem{xu2020nfv}
+Zichuan Xu, Wanli Gong, Qiufen Xia, Weifa Liang, Omer Rana, and Guowei Wu.
+\newblock Nfv-enabled iot service provisioning in mobile edge clouds.
+\newblock {\em IEEE Transactions on Mobile Computing}, 2020.
+
+\bibitem{8247219}
+B.~{Yang}, W.~K. {Chai}, Z.~{Xu}, et~al.
+\newblock Cost-efficient {NFV}-enabled mobile edge-cloud for low latency mobile
+  applications.
+\newblock {\em IEEE Trans. Netw. Service Manag.}, 15(1):475--488, 2018.
+
+\bibitem{yang2019delay}
+Song Yang, Fan Li, Stojan Trajanovski, Xu~Chen, Yu~Wang, and Xiaoming Fu.
+\newblock Delay-aware virtual network function placement and routing in edge
+  clouds.
+\newblock {\em IEEE Transactions on Mobile Computing}, 2019.
+
+\bibitem{SLAM}
+Curtis Yu, Cristian Lumezanu, Abhishek Sharma, Qiang Xu, Guofei Jiang, and
+  Harsha~V. Madhyastha.
+\newblock Software-defined latency monitoring in data center networks.
+\newblock In Jelena Mirkovic and Yong Liu, editors, {\em Passive and Active
+  Measurement}, pages 360--372, Cham, 2015. Springer International Publishing.
+
+\bibitem{apphealthcare1}
+{Yu Cao}, {Songqing Chen}, {Peng Hou}, and D.~{Brown}.
+\newblock Fast: A fog computing assisted distributed analytics system to
+  monitor fall for stroke mitigation.
+\newblock In {\em Proc. IEEE International Conference on Networking,
+  Architecture and Storage (NAS)}, pages 2--11, 2015.
+
+\bibitem{8567670}
+D.~{Zhang}, Y.~{Ma}, C.~{Zheng}, et~al.
+\newblock Cooperative-competitive task allocation in edge computing for
+  delay-sensitive social sensing.
+\newblock In {\em IEEE/ACM SEC}, pages 243--259, 2018.
+
+\bibitem{zhang2020nfv}
+Tianzhu Zhang.
+\newblock Nfv platform design: A survey.
+\newblock {\em arXiv e-prints}, pages arXiv--2002, 2020.
+
+\bibitem{QPlacement}
+Z.~{Zhang}, L.~{Ma}, K.~K. {Leung}, L.~{Tassiulas}, and J.~{Tucker}.
+\newblock Q-placement: Reinforcement-learning-based service placement in
+  software-defined networks.
+\newblock In {\em Proc. IEEE 38th International Conference on Distributed
+  Computing Systems (ICDCS)}, pages 1527--1532, July 2018.
+\newblock \href {https://doi.org/10.1109/ICDCS.2018.00159}
+  {\path{doi:10.1109/ICDCS.2018.00159}}.
+
+\end{thebibliography}
